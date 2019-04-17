@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".bashrc .vimrc .vim .zshrc"    	  # list of files/folders to symlink in homedir
+files=".vimrc .zshrc ./.oh-my-zsh/oh-my-zsh.sh"    	  # list of files/folders to symlink in homedir
 
 ##########
 
@@ -30,4 +30,4 @@ for file in $files; do
     ln -s $dir/$file ~/$file
 done
 
-source ~/.bashrc
+source ~/.zshrc
